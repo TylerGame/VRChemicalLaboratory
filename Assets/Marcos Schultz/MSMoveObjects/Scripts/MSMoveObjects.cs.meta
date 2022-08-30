@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 310936c5c0744094ebfd703dbaafcb3f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - closedHandTexture: {fileID: 21300000, guid: 7048d9cb282cef44f9a7a68ac96d56f7,
+      type: 3}
+  - openHandTexture: {fileID: 21300000, guid: 767e416478fa8824082b812500d97582, type: 3}
+  - pointInTheCenterOfTheScreen: {fileID: 21300000, guid: 172a8ee52b7934c4dbc552ad552b02b0,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

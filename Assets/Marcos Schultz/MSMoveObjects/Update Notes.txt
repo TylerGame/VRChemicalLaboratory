@@ -1,0 +1,133 @@
+...............[Version 1.1.0]...............
+- The 'Type of Motion' variable was added, allowing a better adaptation of the system to several different applications.
+- Fixed bugs.
+- Improvements in player code.
+.............................................
+
+
+
+...............[Version 1.2.0]...............
+- Options for mouse control have been added.
+- Updated documentation.
+.............................................
+
+
+
+...............[Version 1.3.0]...............
+- Correction of bugs that caused the player to fly when carrying an object.
+.............................................
+
+
+
+...............[Version 1.4.0]...............
+- It is now possible to detect the objects through a tag, the name of the object or through the 'physic material' of the collider.
+- Updated documentation.
+.............................................
+
+
+
+...............[Version 1.4.1]...............
+- The problem with cameras that do not have the 'main camera' tag has been fixed.
+.............................................
+
+
+
+...............[Version 1.5.0]...............
+- Now you can select the keys to move and fling the objects.
+- Now you can move objects while you jump.
+- A new mode of movement has been implemented, causing the mass of the objects to interfere with the speed of movement.
+- Some variables had their values and limits changed.
+- Some control variables have been added to the Controller that comes with the feature.
+.............................................
+
+
+
+...............[Version 1.6.0]...............
+- The OnGUI void was removed and replaced with a system involving Sprites, allowing to change the size of the images and obtain better efficiency in the scene.
+- Some tag comparison commands have been replaced, to avoid GC.Collect.
+.............................................
+
+
+
+...............[Version 2.0.0]...............
+- New 3D models for the demo scene.
+- It is now possible to define whether the object can only be moved or can be moved and rotated as well.
+- Prefabs were created to facilitate the implementation of ports and other objects that use some "Joint" component.
+- Fixed bugs in relation to rotating objects that have joints.
+- The speed of movement of objects that are moved through the 'velocity' type of movement are now affected by the mass of the object being moved.
+- Now the force of gravity affects objects that use the movement type 'velocity'.
+.............................................
+
+
+
+...............[Version 2.1.0]...............
+- Fixed bug in mainCamera.nearClipPlane. Now the sprites will be rendered in front of the camera's 'near' minimum.
+- The limits of the variables were increased, allowing a greater control of the functions of the code.
+- Variables were added to the player, allowing the configuration of the jump force and the speed of movement.
+- Now the mass of the objects can affect the speed with which they can be rotated.
+.............................................
+
+
+
+...............[Version 2.2.0]...............
+- The method for detecting distance has been replaced by 'Collider.ClosestPointOnBounds' for a more fluid experience with objects of different scales.
+- Auxiliary variables have been added to the player code for better control of the camera's X and Y axis sensitivities.
+- All of the 'prefabs' present in the project were adjusted and improved.
+.............................................
+
+
+
+...............[Version 2.3.0]...............
+- 'Collider.ClosestPointOnBounds' has been replaced by 'Collider.ClosestPoint' to increase accuracy.
+- Now the minimum version of Unity required for the feature to work is 2018.1.9f2, for compatibility reasons.
+- Performance improvements have been made to the code.
+- The settings were separated into classes and the hierarchy was restructured.
+- An error has been fixed where objects with multiple colliders did not correctly detect the distance between the object and the player.
+- All feature textures have been converted to PNG format.
+.............................................
+
+
+
+...............[Version 2.4.0]...............
+- All inputs in the code are now accessible by the inspector.
+- A new RayCast mode has been added, allowing you to work with static cameras and link the movement to the position of the mouse in relation to the screen.
+- An interactive system of levers was created to better show the various uses of the system.
+- The names of some classes have been changed to avoid incompatibility with other assets.
+- The system for opening and closing drawers has been improved.
+- The texture system has been improved and a new texture has been added.
+.............................................
+
+
+
+...............[Version 2.4.1]...............
+- The minimum version of Unity required becomes version 2018.4.23f1
+- Two debugging functions were added to the code, allowing to know when an object was grabbed or dropped by the player.
+- A public function called 'DropObject' has been added to the code, causing the object that the player is moving to be immediately dropped.
+- The documentation has been updated.
+.............................................
+
+
+
+...............[Version 2.4.2]...............
+- The minimum version of Unity required becomes version 2018.4.30f1
+- The limit of the value of the minimum and maximum distances with which it is possible to interact with an object has been increased.
+- Now, the objects being moved by the player, automatically use the interpolation and collision detection mode defined by the player. When the object is released, the properties of the rigid body automatically return to the parameters they were in.
+.............................................
+
+
+
+...............[Version 2.4.5]...............
+- The minimum version of Unity required becomes version 2018.4.30f1
+- New prefabs and examples demonstrating the possible interactions of the system with the physics of the engine.
+.............................................
+
+
+
+...............[Version 2.4.7]...............
+- Now, all properties of the object being moved are correctly restored when dropping the object, allowing you to work with kinematic objects, or objects that do not have gravity turned on.
+- It is now possible to move and rotate objects in relation to their point of origin or in relation to their center of mass.
+- The type of movement through Rigidbody.position was removed, as it presented instability in some specific types of simulations.
+- Movement types and rotations through AddForce or Velocity have been improved.
+- Objects now also suffer physics effects from being rotated when the object is being moved relative to its center of mass.
+- The system that limits the position of the drawers and their movement was replaced by a system based on coordinates sent via SendMessage.
+.............................................
